@@ -1,0 +1,4 @@
+$DATA1 SOURCE='HSPICE' VERSION='D-2010.03-SP1 32-BIT'
+.TITLE 'project phase 2 - arsalan firoozi 97102225'
+ po               pcc              temper           alter#            
+  6.668e-02         -0.7360          25.0000        1                 

@@ -1,0 +1,16 @@
+Net Status Report
+Filename     : D:\HW\Electronic Principal ???? ?????????\Lab1\PCB\PCB_Project\PCB1.PcbDoc
+Date         : 11/3/2020
+Time         : 6:07:15 PM
+Time Elapsed : 00:00:01
+
+Nets, Layer, Length
+    GND, Signal Layers Only, 4875.99mils
+    NetCbypass_1, Signal Layers Only, 761.213mils
+    NetCin_1, Signal Layers Only, 617.426mils
+    NetCin_2, Signal Layers Only, 1690.122mils
+    NetCout_1, Signal Layers Only, 717.843mils
+    NetCout_2, Signal Layers Only, 247.071mils
+    NetPVCC_2, Signal Layers Only, 576.066mils
+    NetQ1_1, Signal Layers Only, 713.64mils
+count : 8

@@ -1,0 +1,122 @@
+ ****** HSPICE -- D-2010.03-SP1 32-BIT (May 26 2010) winnt ******               
+  Copyright (C) 2010 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the 
+  terms and conditions of the license agreement from Synopsys.
+  Use of this program is your acceptance to be bound by the 
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: c:\users\personal account\desktop\sim2\q3.sp                      
+  lic:  
+  lic: FLEXlm: v8.5b 
+  lic: USER:   Personal Account     HOSTNAME: Personal-Account 
+  lic: HOSTID: "8c164510c74c 74e5f9801d02 00ff2d13c27d 74e5f9801cfe 74e5f9801cff
+  
+  lic: Using FLEXlm license file: 
+  lic: 27000@elena 
+  lic: Checkout 1 hspice 
+  lic: License/Maintenance for hspice will expire on 31-dec-2020/2007.9 
+  lic: NODE LOCKED license on hostid "8c164510c74c 74e5f9801d02 00ff2d13c27d 74e
+ 5
+  lic:   
+ Init: read install configuration file: C:\synopsys\Hspice_D-2010.03-SP1\meta.cfg
+ 
+
+ **warning** the following singular supplies were terminated to 1 meg resistor 
+   supply       node1            node2
+  vcc                     0:100              defined in subckt 0                     0:0                defined in subckt 0               
+  vee                     0:200              defined in subckt 0                     0:0                defined in subckt 0               
+      
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2         
+1****** HSPICE -- D-2010.03-SP1 32-BIT (May 26 2010) winnt ******               
+ ******  
+ lab4 - arsalan firoozi 97102225
+
+  ******  operating point information tnom=  25.000 temp=  25.000 *****
+ ***** operating point status is all       simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:1       =   0.      0:2       =   0.      0:3       =   0.     
+ +0:4       =   5.0000  0:100     =  10.0000  0:200     = -10.0000 
+
+
+ ****  voltage sources
+
+ subckt                                   
+ element  0:vcc      0:vee      0:vinitial
+  volts     10.0000   -10.0000     5.0000 
+  current  -10.0000u   10.0000u    0.     
+  power    100.0000u  100.0000u    0.     
+
+     total voltage source power dissipation=  200.0000u       watts
+
+
+
+ **** resistors
+
+ subckt                                   
+ element  0:r2       0:r1       0:r3      
+  r value  455.0000   455.0000   455.0000 
+  v drop     0.         0.         0.     
+  current    0.         0.         0.     
+  power      0.         0.         0.     
+
+
+ **** voltage-controlled voltage sources
+
+
+ subckt             
+ element  0:eopamp  
+  volts      0.     
+  current    0.     
+
+
+
+
+          ***** job concluded
+1****** HSPICE -- D-2010.03-SP1 32-BIT (May 26 2010) winnt ******               
+ ******  
+ lab4 - arsalan firoozi 97102225
+
+  ******  job statistics summary tnom=  25.000 temp=  25.000 *****
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count                  :     1
+  Available CPU Count                         :     8
+  Actual Model Evaluation(Load) Threads Count :     1
+  Actual Solver Threads Count                 :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =       7 # elements   =      10
+  # resistors   =       5 # capacitors =       1 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       1
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       3
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =       0 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.01           1           3
+  transient          0.24    18000001       19847        4343 rev=       628
+  readin             0.04
+  errchk             0.01
+  setup              0.02
+  output             0.00
+
+
+           total memory used           29  kbytes
+           total cpu time            0.34 seconds
+           total elapsed time        0.39 seconds
+           job started at     12:12:16 12/23/2020
+           job ended   at     12:12:17 12/23/2020
+
+
+  lic: Release hspice token(s) 

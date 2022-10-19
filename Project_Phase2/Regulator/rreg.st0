@@ -1,0 +1,69 @@
+***** HSPICE -- D-2010.03-SP1 32-BIT (May 26 2010) winnt ******
+ Input File: c:\users\personal account\desktop\projectphase2\regulator\rreg.sp
+ lic:
+ lic: FLEXlm: v8.5b
+ lic: USER:   Personal Account     HOSTNAME: Personal-Account
+ lic: HOSTID: "8c164510c74c 00ff2d13c27d 2e98a80fac68 74e5f9801cff 76e5f9801cfe"
+ lic: Using FLEXlm license file:
+ lic: 27000@elena
+ lic: Checkout 1 hspice
+ lic: License/Maintenance for hspice will expire on 31-dec-2020/2007.9
+ lic: NODE LOCKED license on hostid "8c164510c74c 00ff2d13c27d 2e98a80fac68 74e5
+ lic:
+ init: begin read circuit files,  cpu clock=  5.70E-02
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\behave\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\AD\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\XILINX\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\TLINE\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\TI\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\SIGNET\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\PCI\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\LIN_TECH\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\FET\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\DIO\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\COMLINE\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\BURR_BRN\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\BJT\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\behave\
+       option search   = C:\synopsys\Hspice_D-2010.03-SP1\PARTS\AD\
+       option post     =     2.00
+       option runlvl
+       option accura   =     1.00
+ init: end read circuit files,  cpu clock=  1.14E-01 memory=    154 kb
+ init: begin check errors,  cpu clock=  1.14E-01
+ init: end check errors,  cpu clock=  1.28E-01 memory=    292 kb
+ init: begin setup matrix, pivot=     0 cpu clock=  1.28E-01
+       establish matrix -- done,  cpu clock=  1.36E-01 memory=    301 kb
+       re-order matrix -- done,  cpu clock=  1.41E-01 memory=    304 kb
+ init: end setup matrix,  cpu clock=  1.47E-01 memory=    326 kb
+ dcop: begin dcop,  cpu clock=  1.51E-01
+ dcop: end dcop,  cpu clock=  1.60E-01 memory=    326 kb  tot_iter=      19
+ output: c:\users\personal account\desktop\projectphase2\regulator\rreg.ac0
+ sweep: ac ac0    begin, #sweeps= 401 cpu clock=  1.71E-01
+ ac: frequency=    1.06E-01
+ ac: frequency=    1.00E+00
+ ac: frequency=    1.00E+01
+ ac: frequency=    1.00E+02
+ ac: frequency=    1.00E+03
+ ac: frequency=    1.00E+04
+ ac: frequency=    1.00E+05
+ ac: frequency=    1.00E+06
+ ac: frequency=    1.00E+07
+ ac: frequency=    1.00E+08
+ ac: frequency=    1.00E+09
+ sweep: ac ac0    end,  cpu clock=  2.67E-01 memory=    330 kb
+ output: c:\users\personal account\desktop\projectphase2\regulator\rreg.tr0
+ sweep: tran tran0    begin, stop_t=  2.50E-02 #sweeps=**** cpu clock=  2.77E-01
+ tran: time= 2.5075E-03 tot_iter=     824 conv_iter=     412 cpu clock= 5.31E-01
+ tran: time= 5.0075E-03 tot_iter=    1624 conv_iter=     812 cpu clock= 7.67E-01
+ tran: time= 7.5000E-03 tot_iter=    2422 conv_iter=    1211 cpu clock= 1.00E+00
+ tran: time= 1.0007E-02 tot_iter=    3224 conv_iter=    1612 cpu clock= 1.30E+00
+ tran: time= 1.2507E-02 tot_iter=    4024 conv_iter=    2012 cpu clock= 1.54E+00
+ tran: time= 1.5007E-02 tot_iter=    4824 conv_iter=    2412 cpu clock= 1.86E+00
+ tran: time= 1.7507E-02 tot_iter=    5624 conv_iter=    2812 cpu clock= 2.12E+00
+ tran: time= 2.0007E-02 tot_iter=    6424 conv_iter=    3212 cpu clock= 2.37E+00
+ tran: time= 2.2507E-02 tot_iter=    7224 conv_iter=    3612 cpu clock= 2.61E+00
+ tran: time= 2.5000E-02 tot_iter=    8022 conv_iter=    4011 cpu clock= 2.85E+00
+ sweep: tran tran0    end,  cpu clock=  2.85E+00 memory=    342 kb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

@@ -1,0 +1,201 @@
+ ****** HSPICE -- D-2010.03-SP1 32-BIT (May 26 2010) winnt ******               
+  Copyright (C) 2010 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the 
+  terms and conditions of the license agreement from Synopsys.
+  Use of this program is your acceptance to be bound by the 
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: c:\users\personal account\desktop\sim2\q2.sp                      
+  lic:  
+  lic: FLEXlm: v8.5b 
+  lic: USER:   Personal Account     HOSTNAME: Personal-Account 
+  lic: HOSTID: "8c164510c74c 74e5f9801d02 00ff2d13c27d 74e5f9801cfe 74e5f9801cff
+  
+  lic: Using FLEXlm license file: 
+  lic: 27000@elena 
+  lic: Checkout 1 hspice 
+  lic: License/Maintenance for hspice will expire on 31-dec-2020/2007.9 
+  lic: NODE LOCKED license on hostid "8c164510c74c 74e5f9801d02 00ff2d13c27d 74e
+ 5
+  lic:   
+ Init: read install configuration file: C:\synopsys\Hspice_D-2010.03-SP1\meta.cfg
+1****** HSPICE -- D-2010.03-SP1 32-BIT (May 26 2010) winnt ******               
+ ******  
+ lab4 - arsalan firoozi 97102225
+
+  ******  bjt   model parameters tnom=  25.000 temp=  25.000 *****
+
+ ************************************************************************
+ *** bjt model parameters   model name:   0:mynpn    model type:npn   ***
+ ************************************************************************
+
+     names  values   units     names  values   units     names  values   units
+     -----  ------   -----     -----  ------   -----     -----  ------   -----
+
+   1*** basic dc parameters ***
+    level=   1.00                bf= 100.00                br=   1.00         
+      brs=   0.                bulk=  gnd                  is= 1.0e-16 amps   
+      iss=   0.    amps          nf=   1.00                nr=   1.00         
+       ns=   1.00               ibe=   0.    amps         ibc=   0.    amps   
+     subs=   1.00             expli=   0.    amps   
+
+   2*** low current beta degradation effect parameters ***
+      isc=   0.    amps         ise=   0.    amps          nc=   2.00         
+       ne=   1.50         
+
+   3*** base width modulation parameters ***
+      vaf= 150.00  volts        var=   0.    volts  
+
+   4*** high current beta degradation effect parameters ***
+      ikf=   0.    amps         nkf= 500.00m              ikr=   0.    amps   
+
+   5*** parasitic resistor parameters ***
+      irb=   0.    amps          rb=   0.    ohms         rbm=   0.    ohms   
+       re=   0.    ohms          rc=   0.    ohms         rcc=   0.    ohms   
+       vo=   0.    volts      gamma=   0.           
+
+   6*** junction capacitor parameters ***
+     cbcp=   0.    farad       cbep=   0.    farad       ccsp=   0.    farad  
+      cjc=   2.00p farad        cje=   2.00p farad        cjs=   2.50p farad  
+       fc= 500.00m              mjc= 500.00m              mje= 500.00m        
+      mjs= 500.00m              vjc= 750.00m volts        vje= 750.00m volts  
+      vjs= 750.00m volts       xcjc=   1.00               qco=   0.    coul   
+
+   7*** transit time parameters ***
+      itf=   0.    amps         ptf=   0.    deg k         tf= 100.00p secs   
+       tr=   0.    secs         vtf=   0.                 xtf=   0.           
+
+   8*** temperature compensation parameters ***
+     tlev=   0.               tlevc=   0.                tre1=   0.    /deg   
+     tre2=   0.    /deg2       trb1=   0.    /deg        trc1=   0.    /deg   
+     trb2=   0.    /deg2       trm1=   0.    /deg         xtb=   0.           
+     trm2=   0.    /deg2        xti=   3.00               cte=   0.    /deg   
+      ctc=   0.    /deg         cts=   0.    /deg        trc2=   0.    /deg2  
+     tref=  25.00   deg c       bex=   2.42              bexv=   1.90         
+
+   9*** noise parameters ***
+       kf=   0.                  af=   1.00         
+ 
+      
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2         
+1****** HSPICE -- D-2010.03-SP1 32-BIT (May 26 2010) winnt ******               
+ ******  
+ lab4 - arsalan firoozi 97102225
+
+  ******  operating point information tnom=  25.000 temp=  25.000 *****
+ ***** operating point status is all       simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:1       = 768.2928m 0:2       =   1.5368  0:3       =   1.6352 
+ +0:4       = 768.8181m 0:100     =   5.0000 
+
+
+ ****  voltage sources
+
+ subckt             
+ element  0:vcc     
+  volts      5.0000 
+  current   -1.9614m
+  power      9.8068m
+
+     total voltage source power dissipation=    9.8068m       watts
+
+
+
+ ***** current sources
+
+ subckt             
+ element  0:i1      
+  volts      3.4632 
+  current    1.0000m
+  power     -3.4632m
+
+
+     total current source power dissipation=  -3.4632m       watts
+
+ **** resistors
+
+ subckt             
+ element  0:r1      
+  r value    3.5000k
+  v drop     3.3648 
+  current  961.3692u
+  power      3.2348m
+
+
+ **** bipolar junction transistors
+
+
+ subckt                                              
+ element  0:q4       0:q5       0:q6       0:q7      
+ model    0:mynpn    0:mynpn    0:mynpn    0:mynpn   
+  ib         9.8059u    9.7097u    9.7097u    9.6074u
+  ic       980.5867u  970.9731u  970.9765u  961.3692u
+  vbe      768.5459m  768.2928m  768.2928m  768.0205m
+  vce      768.5459m  768.2928m  768.8181m  866.3898m
+  vbc        0.         0.      -525.3524u  -98.3693m
+  vs        -1.5368  -768.2928m -768.8181m   -1.6352 
+  power    761.1622u  753.4516u  753.9643u  840.2991u
+  betad    100.0000   100.0000   100.0004   100.0656 
+  gm        38.1607m   37.7866m   37.7867m   37.4128m
+  rpi        2.6200k    2.6460k    2.6460k    2.6742k
+  rx         0.         0.         0.         0.     
+  ro       152.9696k  154.4842k  154.4842k  156.1298k
+  cpi        6.8415p    6.8037p    6.8037p    6.7660p
+  cmu        2.0000p    2.0000p    1.9993p    1.8805p
+  cbx        0.         0.         0.         0.     
+  ccs        1.4317p    1.7571p    1.7568p    1.4019p
+  betaac    99.9829    99.9829    99.9832   100.0485 
+  ft       686.9306x  683.1132x  683.1689x  688.6585x
+
+
+
+
+          ***** job concluded
+1****** HSPICE -- D-2010.03-SP1 32-BIT (May 26 2010) winnt ******               
+ ******  
+ lab4 - arsalan firoozi 97102225
+
+  ******  job statistics summary tnom=  25.000 temp=  25.000 *****
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count                  :     1
+  Available CPU Count                         :     8
+  Actual Model Evaluation(Load) Threads Count :     1
+  Actual Solver Threads Count                 :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =       6 # elements   =       7
+  # resistors   =       1 # capacitors =       0 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       1
+  # curr_srcs   =       1 # diodes     =       0 # bjts        =       4
+  # jfets       =       0 # mosfets    =       0 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.01           1           8
+  transient          0.19    18000001          68          34 rev=         0
+  readin             0.05
+  errchk             0.01
+  setup              0.02
+  output             0.00
+
+
+           total memory used          165  kbytes
+           total cpu time            0.30 seconds
+           total elapsed time        0.35 seconds
+           job started at     10:42:06 12/23/2020
+           job ended   at     10:42:06 12/23/2020
+
+
+  lic: Release hspice token(s) 

@@ -1,0 +1,62 @@
+* "simulator" "HSPICE" 
+* "version" "D-2010.03-SP1 32-BIT"
+* "format" "HSP"
+* "rundate" "01:29:11 02/07/2020 "
+* "netlist" "d:\arsalan\university\term 5\electronic principals\project_phase2\projectphase2\final\main.sp "
+* "runtitle" "project phase 2 - arsalan firoozi 97102225"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ 1 =   8.0000        
++ 2 =   3.0000        
++ 3 =   0.            
++ 4 =   3.0007        
++ 5 =   3.0000        
++ 17 =   0.            
++ 22 =   0.            
++ 55 =   0.            
++ 100 =   5.8330        
++ xreg.1 =   2.3544        
++ xreg.2 =   2.3552        
++ xreg.4 =   6.5140        
++ xpa.2 =   3.0005        
++ xom.2 =   5.0425        
++ xom.3 =   3.7720        
++ xom.5 =   3.0004        
++ xom.6 = 623.9287m       
++ xom.7 = 624.6942m       
++ xom.8 =   1.3954        
++ xom.9 =   4.2903        
++ xom.10 =   4.2905        
++ xom.11 = 790.1922m       
++ xom.12 =   5.0618        
++ xom.13 =   5.0612        
++ xom.14 =   5.0606        
++ xom.16 = 772.7235m       
++ xom.17 =   0.            
++ xom.44 =   2.9996        
++ xom.66 =   3.0000        
++ xom.101 = 737.2242u       
++ xom.102 = 737.2242u       
++ xreg.x1.2 =   7.2004        
++ xreg.x1.3 =   3.1373        
++ xreg.x1.5 =   2.3552        
++ xreg.x1.6 =   1.1343        
++ xreg.x1.7 =   1.1352        
++ xreg.x1.8 =   1.9139        
++ xreg.x1.9 =   6.4407        
++ xreg.x1.10 =   6.4454        
++ xreg.x1.11 = 799.3440m       
++ xreg.x1.12 =   7.2205        
++ xreg.x1.13 =   7.2200        
++ xreg.x1.14 =   7.2153        
++ xreg.x1.16 = 781.8488m       
++ xreg.x1.17 =   0.            
++ xreg.x1.44 =   2.3544        
++ xreg.x1.66 =   4.0000        
++ xreg.x1.101 =   2.5140        
++ xreg.x1.102 =   2.5140        
+***   END: Saved Operating Point ***                     

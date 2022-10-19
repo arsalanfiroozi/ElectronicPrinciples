@@ -1,0 +1,4 @@
+Change Component Designator: OldDesignator=Cout? NewDesignator=Cbypass
+Change Net Name : Old Net Name=NetCout?_2 New Net Name=NetCbypass_2
+Change Net Name : Old Net Name=NetCout_1 New Net Name=NetCbypass_1
+Added Room: Name=Sheet1

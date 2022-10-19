@@ -1,0 +1,17 @@
+* "simulator" "HSPICE" 
+* "version" "D-2010.03-SP1 32-BIT"
+* "format" "HSP"
+* "rundate" "21:27:45 02/06/2020 "
+* "netlist" "c:\users\personal account\desktop\projectphase2\final\pa\pa.sp "
+* "runtitle" "lab simulation"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ 1 =   3.0000        
++ 2 =   3.0002        
++ 3 =   0.            
++ 10 =   6.0000        
+***   END: Saved Operating Point ***                     
